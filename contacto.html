@@ -1,0 +1,68 @@
+<!-- Sección solo de Información de contacto -->
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Información de Contacto</title>
+  <style>
+    :root{
+      --accent:#0ea5e9;
+      --bg:#f9fafb;
+      --card:#ffffff;
+      --muted:#6b7280;
+      --font: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    }
+    body{font-family:var(--font); background:var(--bg); color:#111;margin:0;padding:40px}
+    .card{background:var(--card);border-radius:16px;box-shadow:0 6px 18px rgba(15,23,42,0.08);padding:32px;max-width:400px;margin:0 auto}
+    .info{display:flex;flex-direction:column;gap:16px}
+    .contact-item{display:flex;gap:12px;align-items:flex-start}
+    .icon{width:40px;height:40px;flex:0 0 40px;border-radius:10px;background:#e0f2fe;display:flex;align-items:center;justify-content:center;font-size:1.2rem}
+    .small{font-size:0.9rem;color:var(--muted)}
+    .socials{display:flex;gap:10px;margin-top:8px}
+    a.social{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:12px;background:#fff;border:1px solid #e5e7eb;font-weight:600;color:var(--accent);text-decoration:none;transition:all 0.2s}
+    a.social:hover{background:var(--accent);color:#fff}
+  </style>
+</head>
+<body>
+  <aside class="card info" role="complementary" aria-label="Información de contacto">
+    <div>
+      <h3 style="margin:0 0 6px;color:var(--accent)">Información</h3>
+      <p class="small">Disponible para proyectos freelance y roles de tiempo completo.</p>
+    </div>
+
+    <div class="contact-item">
+      <div class="icon" aria-hidden="true">📧</div>
+      <div>
+        <div style="font-weight:600">Email</div>
+        <div class="small"><a href="mailto:miemail@ejemplo.com">Alonzolizama@gmail.com</a></div>
+      </div>
+    </div>
+
+    <div class="contact-item">
+      <div class="icon" aria-hidden="true">📞</div>
+      <div>
+        <div style="font-weight:600">Teléfono</div>
+        <div class="small"><a href="tel:+521234567890">9994186933</a></div>
+      </div>
+    </div>
+
+    <div class="contact-item">
+      <div class="icon" aria-hidden="true">📍</div>
+      <div>
+        <div style="font-weight:600">Ubicación</div>
+        <div class="small">Mérida, Yucatán, México</div>
+      </div>
+    </div>
+
+    <div>
+      <div style="font-weight:600;margin-top:6px">Redes</div>
+      <div class="socials" aria-label="Redes sociales">
+        <a class="social" href="#" title="LinkedIn" aria-label="LinkedIn">in</a>
+        <a class="social" href="#" title="GitHub" aria-label="GitHub">gh</a>
+        
+      </div>
+    </div>
+  </aside>
+</body>
+</html>
