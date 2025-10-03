@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plantilla: Header y Footer</title>
+<meta name="description" content="Plantilla básica de página con header (encabezado) y footer (pie de página)">
+<style>
+/* Reset simple */
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+--accent:#0ea5a4; /* verde-azulado */
+--muted:#6b7280;
+--bg:#f8fafc;
+--card:#ffffff;
+--radius:12px;
+--maxw:1100px;
+font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+body{background:var(--bg);color:#111;line-height:1.5}
+.container{max-width:var(--maxw);margin:0 auto;padding:24px}
+
+
+/* Header */
+header{background:linear-gradient(90deg, rgba(14,165,164,0.12), rgba(99,102,241,0.06));backdrop-filter: blur(0.5px);}
+.topbar{display:flex;align-items:center;justify-content:space-between;padding:14px 20px}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{width:44px;height:44px;border-radius:10px;background:var(--card);display:inline-grid;place-items:center;font-weight:700;color:var(--accent);box-shadow:0 4px 12px rgba(2,6,23,0.06)}
+nav{display:flex;gap:12px;align-items:center}
+nav a{padding:8px 12px;border-radius:8px;text-decoration:none;color:inherit;font-weight:500}
+nav a:hover{background:rgba(0,0,0,0.03)}
+.cta{background:var(--accent);color:#fff;padding:8px 12px;border-radius:8px;text-decoration:none}
+
+
+/* Hero */
+.hero{padding:36px 20px}
+.hero .inner{display:flex;flex-direction:column;gap:16px}
+.title{font-size:28px;font-weight:700}
+.subtitle{color:var(--muted)}
+
+
+/* Main */
+main{padding:22px 20px}
+.card{background:var(--card);padding:18px;border-radius:var(--radius);box-shadow:0 6px 18px rgba(2,6,23,0.04)}
+
+
+/* Footer */
+footer{margin-top:28px;padding:22px 20px;background:linear-gradient(180deg, rgba(2,6,23,0.02), transparent)}
+.footer-grid{display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center}
+.small{font-size:13px;color:var(--muted)}
+
+
+/* Responsive */
+@media (min-width:760px){
+.hero .inner{flex-direction:row;align-items:center;justify-content:space-between}
+.title{font-size:32px}
+nav{gap:20px}
+}
+@media (max-width:520px){
+.topbar{padding:12px}
+.logo{width:40px;height:40px}
+}
+</style>
+</head>
+<body>
+<header>
+<div class="container topbar">
+<div class="brand">
+<div class="logo" aria-hidden="true">AL</div>
+<div>
+<div style="font-weight:700">Miportafolio</div>
+<div style="font-size:12px;color:var(--muted)">Soluciones web</div>
+</div>
+</div>
+
+
+<nav aria-label="Navegación principal">
+<a href="#">Inicio</a>
+<a href="#servicios">Servicios</a>
+<a href="Acerca.html">Acerca</a>
+<a class="cta" href="contacto.html">Contacto</a>
+</nav>
+</div>
+
+
+<div class="container hero">
+<div class="inner">
+<div>
+<h1 class="title">Plantilla simple con header y footer</h1>
+<p class="subtitle">Base ligera para agregar a tu index.html. Incluye navegación, hero, contenido principal y pie de página — accesible y responsive.</p>
